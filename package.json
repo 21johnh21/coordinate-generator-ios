@@ -1,0 +1,35 @@
+{
+  "name": "georoulette-ios",
+  "version": "1.0.0",
+  "description": "iOS wrapper for Geo Roulette coordinate generator",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx cap run ios --livereload --external",
+    "sync": "sh scripts/sync-web-app.sh",
+    "sync:dev": "sh scripts/sync-web-app.sh dev",
+    "ios": "npx cap open ios",
+    "build": "npm run sync && npx cap build ios",
+    "clean": "rm -rf www/* ios/App/App/public node_modules package-lock.json",
+    "update": "npx cap update ios",
+    "copy": "npx cap copy ios"
+  },
+  "keywords": [
+    "capacitor",
+    "ios",
+    "coordinate-generator"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "^5.7.0",
+    "@capacitor/ios": "^5.7.0",
+    "@capacitor/geolocation": "^5.0.7",
+    "@capacitor/haptics": "^5.0.7",
+    "@capacitor/share": "^5.0.7",
+    "@capacitor/splash-screen": "^5.0.7",
+    "@capacitor/status-bar": "^5.0.7"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^5.7.0"
+  }
+}

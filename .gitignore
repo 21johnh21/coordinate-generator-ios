@@ -1,0 +1,44 @@
+# Capacitor
+.capacitor/
+dist/
+www/
+
+# iOS
+ios/App/App/public/
+ios/App/Pods/
+ios/App/App.xcworkspace
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Build
+build/
+dist/

@@ -1,0 +1,34 @@
+{
+  "appId": "com.georoulette.app",
+  "appName": "Geo Roulette",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "ios": {
+    "contentInset": "always",
+    "backgroundColor": "#0f172a",
+    "allowsLinkPreview": false,
+    "scrollEnabled": true
+  },
+  "server": {
+    "url": "http://localhost:3000",
+    "cleartext": true,
+    "androidScheme": "http",
+    "iosScheme": "http"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0,
+      "backgroundColor": "#0f172a",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "dark",
+      "backgroundColor": "#0f172a"
+    },
+    "Geolocation": {
+      "permissions": {
+        "location": "whenInUse"
+      }
+    }
+  }
+}
