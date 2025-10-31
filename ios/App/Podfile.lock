@@ -1,6 +1,8 @@
 PODS:
   - Capacitor (5.7.8):
     - CapacitorCordova
+  - CapacitorBrowser (5.2.1):
+    - Capacitor
   - CapacitorCordova (5.7.8)
   - CapacitorGeolocation (5.0.8):
     - Capacitor
@@ -15,6 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
+  - "CapacitorBrowser (from `../../node_modules/@capacitor/browser`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorGeolocation (from `../../node_modules/@capacitor/geolocation`)"
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
@@ -25,6 +28,8 @@ DEPENDENCIES:
 EXTERNAL SOURCES:
   Capacitor:
     :path: "../../node_modules/@capacitor/ios"
+  CapacitorBrowser:
+    :path: "../../node_modules/@capacitor/browser"
   CapacitorCordova:
     :path: "../../node_modules/@capacitor/ios"
   CapacitorGeolocation:
@@ -40,6 +45,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Capacitor: 9686e5711b48a1aa84671ede795d0175848abcba
+  CapacitorBrowser: f13ada96777742309ae17a974e934eda8e102508
   CapacitorCordova: 31ab98dca2ddcee051027a1afe7e8c85c82f7297
   CapacitorGeolocation: 6beed87d5d2b80745f03a84db4ab2269bc872c9c
   CapacitorHaptics: acd823c6ed0ec2cd968a09316768144b0495a1e7
@@ -47,6 +53,6 @@ SPEC CHECKSUMS:
   CapacitorSplashScreen: 0b962a2bee014151569dc59b089ba0e93daeeaf0
   CapacitorStatusBar: 8e0a8f213504695505dc8c4f808dffbe03aa0e0f
 
-PODFILE CHECKSUM: c95febd76badbf0cb56aeb05c013342293a43121
+PODFILE CHECKSUM: 17715a4f64080b111050180cc619513bce32ae16
 
 COCOAPODS: 1.16.2

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Geo Roulette</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #e2e8f0;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #10b981;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: #14b8a6;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #cbd5e1;
+        }
+
+        strong {
+            color: #e2e8f0;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+            color: #cbd5e1;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #10b981;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(16, 185, 129, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #14b8a6;
+            border-bottom-color: #14b8a6;
+        }
+
+        .faq-item {
+            background: rgba(30, 41, 59, 0.5);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 4px solid #10b981;
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+        }
+
+        .contact-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 2px solid rgba(16, 185, 129, 0.3);
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            margin-top: 0;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            border: none;
+            margin: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+        }
+
+        .contact-button:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid rgba(16, 185, 129, 0.3);
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">🌍</div>
+                <h1>Geo Roulette</h1>
+            </div>
+            <p style="color: #94a3b8; font-size: 1.2em;">Support & Help</p>
+        </header>
+
+        <section>
+            <h2>Welcome to Geo Roulette Support</h2>
+            <p>Need help? You've come to the right place! Below you'll find answers to common questions and ways to get in touch.</p>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>How do I generate random coordinates?</h3>
+                <p>1. Open the sidebar (tap the menu button on mobile)<br>
+                   2. Select a region from the dropdown (World, Continent, Country, or Near Me)<br>
+                   3. Tap the "Generate Location" button<br>
+                   4. Your random coordinates will appear on the map!</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What is the "Near Me" feature?</h3>
+                <p>The "Near Me" feature generates random coordinates within a specific radius of your current location. When you first use this feature, you'll be asked to grant location permission. Your location is used only for this calculation and is never stored or shared.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I change the map style?</h3>
+                <p>Tap the layers button (square icon with layers) in the top-right corner of the map to switch between dark mode and satellite view.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I copy coordinates?</h3>
+                <p>Yes! After generating coordinates, tap the "Copy" button to copy them to your clipboard. You can also tap "Open in Maps" to view the location in Apple Maps.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Where is my coordinate history stored?</h3>
+                <p>Your coordinate history is stored locally on your device only. It's never uploaded to any server. You can view your history in the sidebar and clear it at any time by tapping "Clear History".</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Does the app work offline?</h3>
+                <p>The app requires an internet connection to load map tiles from Mapbox. However, once loaded, basic coordinate generation works offline.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why can't I see the map?</h3>
+                <p>Make sure you have a stable internet connection. The app uses Mapbox to display maps, which requires connectivity. If you continue to have issues, try restarting the app.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I manage location permissions?</h3>
+                <p><strong>On iOS:</strong><br>
+                   1. Open Settings<br>
+                   2. Scroll to Geo Roulette<br>
+                   3. Tap Location<br>
+                   4. Choose your preferred permission level</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is my data private?</h3>
+                <p>Yes! Geo Roulette does not collect, store, or share any personal data. All processing happens locally on your device. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Are there any ads or in-app purchases?</h3>
+                <p>No! Geo Roulette is completely free with no ads and no in-app purchases. Enjoy the full app experience at no cost.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Troubleshooting</h2>
+
+            <h3>App won't load</h3>
+            <ul>
+                <li>Check your internet connection</li>
+                <li>Force close and restart the app</li>
+                <li>Make sure you're running the latest iOS version</li>
+                <li>Try restarting your device</li>
+            </ul>
+
+            <h3>Map is blank or not loading</h3>
+            <ul>
+                <li>Ensure you have a stable internet connection</li>
+                <li>Try switching between map styles (dark/satellite)</li>
+                <li>Check if other apps can access the internet</li>
+            </ul>
+
+            <h3>Location permission issues</h3>
+            <ul>
+                <li>Check location permissions in Settings → Geo Roulette → Location</li>
+                <li>Make sure Location Services are enabled system-wide in Settings → Privacy → Location Services</li>
+            </ul>
+        </section>
+
+        <div class="contact-box">
+            <h2>Still Need Help?</h2>
+            <p>We're here to help! Get in touch with us:</p>
+            <a href="mailto:support@georoulette.com" class="contact-button">📧 Email Support</a>
+            <br>
+            <p style="margin-top: 20px; color: #94a3b8;">We typically respond within 24-48 hours.</p>
+        </div>
+
+        <section>
+            <h2>About Geo Roulette</h2>
+            <p>Geo Roulette is a free coordinate generator that lets you discover random places around the world. Whether you're planning an adventure, exploring geography, or just curious about our planet, Geo Roulette makes it fun and easy.</p>
+        </section>
+
+        <section>
+            <h2>Feedback & Feature Requests</h2>
+            <p>We'd love to hear your ideas! If you have suggestions for new features or improvements, please email us at <a href="mailto:feedback@georoulette.com">feedback@georoulette.com</a>.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Geo Roulette. All rights reserved.</p>
+            <p><a href="https://georoulette.com">Website</a> • <a href="privacy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
