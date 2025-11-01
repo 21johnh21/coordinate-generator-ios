@@ -45,5 +45,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Geo Roulette needs your location to generate random coordinates near you when using the "Near Me" feature. Your location is never stored or shared.</string>
 </dict>
 </plist>
