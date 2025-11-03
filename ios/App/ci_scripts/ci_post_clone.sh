@@ -47,6 +47,7 @@ npm run build
 # Copy to iOS project
 echo "📋 Copying web app to iOS..."
 cd "${IOS_REPO_PATH}"
+mkdir -p www
 rm -rf www/*
 cp -r "${WEB_REPO_PATH}/build/"* www/
 
