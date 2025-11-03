@@ -8,6 +8,14 @@ set -e
 echo "🔍 Starting Xcode Cloud build preparation"
 echo "📍 Current directory: $(pwd)"
 
+# Install Node.js using Homebrew (pre-installed on Xcode Cloud)
+echo "📦 Installing Node.js..."
+brew install node
+
+# Verify installation
+echo "✅ Node version: $(node --version)"
+echo "✅ npm version: $(npm --version)"
+
 # Navigate to project root
 cd ../../..
 echo "📍 Project root: $(pwd)"
