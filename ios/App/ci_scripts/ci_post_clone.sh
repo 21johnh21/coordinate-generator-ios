@@ -29,7 +29,16 @@ if [ -d "coordinate-generator" ]; then
   echo "⚠️  Web app directory already exists, removing..."
   rm -rf coordinate-generator
 fi
-git clone https://github.com/21johnh21/coordinate-generator.git
+
+# Use GitHub token for authentication if available
+if [ -n "$GITHUB_TOKEN" ]; then
+  echo "🔐 Using authenticated clone..."
+  git clone https://${GITHUB_TOKEN}@github.com/21johnh21/coordinate-generator.git
+else
+  echo "⚠️  No GITHUB_TOKEN found, trying public clone..."
+  git clone https://github.com/21johnh21/coordinate-generator.git
+fi
+
 cd coordinate-generator
 
 echo "📦 Installing web app dependencies..."
