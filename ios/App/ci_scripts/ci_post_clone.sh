@@ -17,8 +17,16 @@ cd ../../..
 echo "📦 Installing iOS wrapper dependencies..."
 npm install
 
-echo "📥 Accessing web app repository..."
-cd ../coordinate-generator
+echo "📥 Cloning web app repository..."
+cd ..
+if [ -d "coordinate-generator" ]; then
+  echo "Removing existing coordinate-generator directory..."
+  rm -rf coordinate-generator
+fi
+
+# Clone the web app repository (Xcode Cloud has access via Additional Repositories)
+git clone https://github.com/21johnh21/coordinate-generator.git
+cd coordinate-generator
 
 echo "📦 Installing web app dependencies..."
 npm install
