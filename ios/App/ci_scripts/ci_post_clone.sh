@@ -8,6 +8,20 @@ set -e
 echo "🔍 Starting Xcode Cloud build preparation"
 echo "📍 Current directory: $(pwd)"
 
+# Debug: Check if environment variables are available
+echo "🔍 Checking environment variables..."
+if [ -n "$GITHUB_TOKEN" ]; then
+  echo "✅ GITHUB_TOKEN is set (length: ${#GITHUB_TOKEN})"
+else
+  echo "❌ GITHUB_TOKEN is NOT set"
+fi
+
+if [ -n "$REACT_APP_MAPBOX_TOKEN" ]; then
+  echo "✅ REACT_APP_MAPBOX_TOKEN is set"
+else
+  echo "❌ REACT_APP_MAPBOX_TOKEN is NOT set"
+fi
+
 # Install Node.js using Homebrew (pre-installed on Xcode Cloud)
 echo "📦 Installing Node.js..."
 brew install node
