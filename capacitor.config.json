@@ -10,20 +10,16 @@
     "scrollEnabled": true
   },
   "server": {
-    "androidScheme": "https",
-    "iosScheme": "https"
+    "url": "http://localhost:3000",
+    "cleartext": true,
+    "androidScheme": "http",
+    "iosScheme": "http"
   },
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 500,
-      "launchAutoHide": true,
+      "launchShowDuration": 0,
       "backgroundColor": "#0f172a",
-      "showSpinner": false,
-      "spinnerColor": "#10b981",
-      "androidSpinnerStyle": "large",
-      "iosSpinnerStyle": "large",
-      "splashFullScreen": true,
-      "splashImmersive": true
+      "showSpinner": false
     },
     "StatusBar": {
       "style": "dark",
