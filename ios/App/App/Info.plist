@@ -51,6 +51,8 @@
 	<string>Geo Roulette needs your location to generate random coordinates near you when using the "Near Me" feature. Your location is never stored or shared.</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-3940256099942544~1458002511</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>app-settings</string>

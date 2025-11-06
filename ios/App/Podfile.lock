@@ -1,25 +1,30 @@
 PODS:
-  - Capacitor (7.4.4):
+  - Capacitor (5.7.8):
     - CapacitorCordova
-  - CapacitorBrowser (7.0.2):
+  - CapacitorBrowser (5.2.1):
     - Capacitor
-  - CapacitorCordova (7.4.4)
-  - CapacitorGeolocation (7.1.5):
+  - CapacitorCommunityAdmob (6.2.0):
     - Capacitor
-    - IONGeolocationLib (= 1.0.1)
-  - CapacitorHaptics (7.0.2):
+    - Google-Mobile-Ads-SDK (= 11.3.0)
+  - CapacitorCordova (5.7.8)
+  - CapacitorGeolocation (5.0.8):
     - Capacitor
-  - CapacitorShare (7.0.2):
+  - CapacitorHaptics (5.0.8):
     - Capacitor
-  - CapacitorSplashScreen (7.0.3):
+  - CapacitorShare (5.0.8):
     - Capacitor
-  - CapacitorStatusBar (7.0.3):
+  - CapacitorSplashScreen (5.0.8):
     - Capacitor
-  - IONGeolocationLib (1.0.1)
+  - CapacitorStatusBar (5.0.8):
+    - Capacitor
+  - Google-Mobile-Ads-SDK (11.3.0):
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleUserMessagingPlatform (3.1.0)
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorBrowser (from `../../node_modules/@capacitor/browser`)"
+  - "CapacitorCommunityAdmob (from `../../node_modules/@capacitor-community/admob`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorGeolocation (from `../../node_modules/@capacitor/geolocation`)"
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
@@ -29,13 +34,16 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - IONGeolocationLib
+    - Google-Mobile-Ads-SDK
+    - GoogleUserMessagingPlatform
 
 EXTERNAL SOURCES:
   Capacitor:
     :path: "../../node_modules/@capacitor/ios"
   CapacitorBrowser:
     :path: "../../node_modules/@capacitor/browser"
+  CapacitorCommunityAdmob:
+    :path: "../../node_modules/@capacitor-community/admob"
   CapacitorCordova:
     :path: "../../node_modules/@capacitor/ios"
   CapacitorGeolocation:
@@ -50,16 +58,18 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/status-bar"
 
 SPEC CHECKSUMS:
-  Capacitor: 358dd1c3fdd71d969547b17e159fd8a7736cb45f
-  CapacitorBrowser: 22541e48442de44dc629c214388290d6eecc6ae9
-  CapacitorCordova: bf648a636f3c153f652d312ae145fb508b6ffced
-  CapacitorGeolocation: 84f868bea4c2499aebc3bb3a88fd0a508f87ab87
-  CapacitorHaptics: b3fb2869e72c4466e18ce9ccbeb60a3d8723b3d4
-  CapacitorShare: be166411fa995ead2d39b104aa0aae56d8615c66
-  CapacitorSplashScreen: e388b8e0ed0e982a9d3a40417f478e7a018a8763
-  CapacitorStatusBar: 0659ddc7b1713764a05831463d215b177a15d054
-  IONGeolocationLib: 20f9d0248a0b5264511fb57a37e25dd2badf797a
+  Capacitor: 9686e5711b48a1aa84671ede795d0175848abcba
+  CapacitorBrowser: f13ada96777742309ae17a974e934eda8e102508
+  CapacitorCommunityAdmob: 52a6ebbec5e4c277d2694657becd42bcadbe369a
+  CapacitorCordova: 31ab98dca2ddcee051027a1afe7e8c85c82f7297
+  CapacitorGeolocation: 6beed87d5d2b80745f03a84db4ab2269bc872c9c
+  CapacitorHaptics: acd823c6ed0ec2cd968a09316768144b0495a1e7
+  CapacitorShare: 0a43832a9e09fca9ada569ee1856de75d54c61bf
+  CapacitorSplashScreen: 0b962a2bee014151569dc59b089ba0e93daeeaf0
+  CapacitorStatusBar: 8e0a8f213504695505dc8c4f808dffbe03aa0e0f
+  Google-Mobile-Ads-SDK: 301a16c461c331ba34ff4dab40a22ab7c147af61
+  GoogleUserMessagingPlatform: befe603da6501006420c206222acd449bba45a9c
 
-PODFILE CHECKSUM: c934d554ac1895a81eae2f52b5f1a691af3e7824
+PODFILE CHECKSUM: 934efa984ea5a08b07cb0a8661d0347454035e08
 
 COCOAPODS: 1.16.2
